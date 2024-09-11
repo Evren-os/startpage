@@ -3,7 +3,7 @@ let saved_config = JSON.parse(localStorage.getItem("CONFIG"));
 const default_config = {
   overrideStorage: true,
   temperature: {
-    location: 'Manila, Philippines',
+    location: "Chittagong, Bangladesh",
     scale: "C",
   },
   clock: {
@@ -20,201 +20,162 @@ const default_config = {
     },
   },
   keybindings: {
-    "s": "search-bar",
-    "q": "config-tab",
+    s: "search-bar",
+    q: "config-tab",
   },
   disabled: [],
-  localIcons: false,
+  // localIcons: false,
+  localIcons: true,
   fastlink: "https://chat.openai.com/",
   openLastVisitedTab: true,
   tabs: [
     {
       name: "Myself",
       background_url: "src/img/banners/cbg-9.gif",
-      categories: [{
-        name: "Productivity",
-        links: [
-          {
-            name: "quipper",
-            url: "https://learn.quipper.com/en/todos/active",
-            icon: "chalkboard",
-            icon_color: "#a6e3a1",
-          },
-          {
-            name: "bible",
-            url: "https://www.bible.com/users/ZachQuita/reading-plans/",
-            icon: "bible",
-            icon_color: "#f0c6c6",
-          },
-          {
-            name: "chatgpt",
-            url: "https://chat.openai.com/",
-            icon: "brand-openai",
-            icon_color: "#94e2d5",
-          },
-          {
-            name: "canva",
-            url: "https://www.canva.com/",
-            icon: "writing",
-            icon_color: "#89b4fa",
-          },
-          {
-            name: "gmail",
-            url: "https://mail.google.com",
-            icon: "brand-gmail",
-            icon_color: "#f38ba8",
-          },
-          {
-            name: "documents",
-            url: "https://docs.google.com",
-            icon: "text-size",
-            icon_color: "#cba6f7",
-          },
-        ],
-      }, {
-        name: "japanese",
-        links: [
-          {
-            name: "takoboto",
-            url: "https://takoboto.jp",
-            icon: "book-2",
-            icon_color: "#f38ba8",
-          },
-          {
-            name: "ichi moe",
-            url: "https://ichi.moe",
-            icon: "language",
-            icon_color: "#cba6f7",
-          },
-          {
-            name: "deepl",
-            url: "https://www.deepl.com/en/translator",
-            icon: "language-hiragana",
-            icon_color: "#89b4fa",
-          },
-          {
-            name: "conjugation",
-            url: "https://baileysnyder.com/jconj/",
-            icon: "message-language",
-            icon_color: "#fab387",
-          },
-          {
-            name: "nhk",
-            url: "https://www3.nhk.or.jp/news/easy/",
-            icon: "news",
-            icon_color: "#89b4fa",
-          },
-          {
-            name: "children's books",
-            url: "https://japanesebooks.jp/en/tag/%E5%85%90%E7%AB%A5/",
-            icon: "books",
-            icon_color: "#cdd6f4",
-          },
-          {
-            name: "storyweaver",
-            url: "https://storyweaver.org.in/en/search?language=Japanese",
-            icon: "books",
-            icon_color: "#cdd6f4",
-          }
-        ],
-      },
-    ],
+      categories: [
+        {
+          name: "Pixel Portals",
+          links: [
+            {
+              name: "facebook",
+              url: "https://www.facebook.com/",
+              icon: "brand-facebook",
+              icon_color: "#f38ba8",
+            },
+            {
+              name: "youtube",
+              url: "https://www.youtube.com/",
+              icon: "brand-youtube",
+              icon_color: "#fab387",
+            },
+            {
+              name: "instagram",
+              url: "https://instagram.com",
+              icon: "brand-instagram",
+              icon_color: "#89b4fa",
+            },
+            {
+              name: "whatsapp",
+              url: "https://web.whatsapp.com/",
+              icon: "brand-whatsapp",
+              icon_color: "#cba6f7",
+            },
+            {
+              name: "reddit",
+              url: "https://www.reddit.com/",
+              icon: "brand-reddit",
+              icon_color: "#f38ba8",
+            },
+            {
+              name: "discord",
+              url: "https://discord.com/channels/@me",
+              icon: "brand-discord",
+              icon_color: "#cba6f7",
+            },
+            {
+              name: "twitter",
+              url: "https://twitter.com/home",
+              icon: "brand-x",
+              icon_color: "#cdd6f4",
+            },
+          ],
+        },
+        {
+          name: "Synaptic Simulacra",
+          links: [
+            {
+              name: "chatgpt",
+              url: "https://chatgpt.com/",
+              icon: "brand-openai",
+              icon_color: "#f38ba8",
+            },
+            {
+              name: "claude.ai",
+              url: "https://claude.ai/",
+              icon: "brand-snowflake",
+              icon_color: "#cba6f7",
+            },
+            {
+              name: "google-gemini",
+              url: "https://gemini.google.com/app",
+              icon: "circles",
+              icon_color: "#89b4fa",
+            },
+            {
+              name: "ideogram.ai",
+              url: "https://ideogram.ai/",
+              icon: "photo-ai",
+              icon_color: "#fab387",
+            },
+          ],
+        },
+      ],
     },
     {
       name: "chi ll",
       background_url: "src/img/banners/bg-5.gif",
       categories: [
         {
-          name: "social media",
+          name: "Ethereal Emporium",
           links: [
             {
-              name: "pinterest",
-              url: "https://www.pinterest.ph/",
-              icon: "brand-pinterest",
-              icon_color: "#f38ba8",
-            },
-            {
-              name: "reddit",
-              url: "https://reddit.com",
-              icon: "brand-reddit",
+              name: "torrentbd",
+              url: "https://www.torrentbd.net/",
+              icon: "clear-all",
               icon_color: "#fab387",
             },
             {
-              name: "facebook",
-              url: "https://facebook.com",
-              icon: "brand-facebook",
-              icon_color: "#89b4fa",
-            },
-            {
-              name: "messenger",
-              url: "https://messenger.com",
-              icon: "brand-messenger",
-              icon_color: "#cba6f7",
-            },
-            {
-              name: "instagram",
-              url: "https://instagram.com",
-              icon: "brand-instagram",
+              name: "nyaa.si",
+              url: "https://nyaa.si/",
+              icon: "brand-funimation",
               icon_color: "#f38ba8",
             },
             {
-              name: "discord",
-              url: "https://canary.discord.com",
-              icon: "brand-discord",
-              icon_color: "#cba6f7",
+              name: "katmoviehd",
+              url: "https://katmoviehd.boo/",
+              icon: "brand-netflix",
+              icon_color: "#89b4fa",
             },
             {
-              name: "cinny",
-              url: "https://app.cinny.in",
-              icon: "brand-matrix",
-              icon_color: "#cdd6f4",
+              name: "subscene",
+              url: "https://subscene.best/",
+              icon: "badge-cc",
+              icon_color: "#cba6f7",
             },
           ],
         },
         {
-          name: "entertainment",
+          name: "Nimbus Nexus",
           links: [
             {
-              name: "anilist",
-              url: "https://anilist.co/user/Zakar98k/",
-              icon: "list-details",
-              icon_color: "#89b4fa",
-            },
-            {
-              name: "mangadex",
-              url: "https://mangadex.org",
-              icon: "book",
-              icon_color: "#fab387",
-            },
-            {
-              name: "anix",
-              url: "https://anix.to",
-              icon: "player-play",
-              icon_color: "#74c7ec",
-            },
-            {
-              name: "rym",
-              url: "https://anix.to",
-              icon: "headphones",
+              name: "gmail",
+              url: "https://mail.google.com/mail/u/0/#inbox",
+              icon: "brand-gmail",
               icon_color: "#cba6f7",
             },
             {
-              name: "yt",
-              url: "https://youtube.com",
-              icon: "brand-youtube",
+              name: "proton-mail",
+              url: "https://mail.proton.me/u/0/inbox",
+              icon: "atom-2",
               icon_color: "#f38ba8",
             },
             {
-              name: "flixhd",
-              url: "https://flixhd.cc",
-              icon: "movie",
-              icon_color: "#f9e2af",
+              name: "google-drive",
+              url: "https://drive.google.com/drive/my-drive",
+              icon: "brand-google-drive",
+              icon_color: "#89b4fa",
             },
             {
-              name: "netflix",
-              url: "https://netflix.com",
-              icon: "brand-netflix",
-              icon_color: "#f38ba8",
+              name: "onedrive",
+              url: "https://vh1ts-my.sharepoint.com/personal/avrenos_vh1ts_onmicrosoft_com/_layouts/15/onedrive.aspx?view=1",
+              icon: "brand-onedrive",
+              icon_color: "#fab387",
+            },
+            {
+              name: "mega",
+              url: "https://mega.nz/",
+              icon: "cloud-upload",
+              icon_color: "#74c7ec",
             },
           ],
         },
@@ -225,7 +186,7 @@ const default_config = {
       background_url: "src/img/banners/bg-4.gif",
       categories: [
         {
-          name: "repositories",
+          name: "Cipher Sanctum",
           links: [
             {
               name: "github",
@@ -234,49 +195,56 @@ const default_config = {
               icon_color: "#89b4fa",
             },
             {
-              name: "gitlab",
+              name: "tailwindcdd",
               url: "https://gitlab.com/",
-              icon: "brand-gitlab",
+              icon: "brand-tailwind",
+              icon_color: "#fab387",
+            },
+            {
+              name: "flathub",
+              url: "https://flathub.org/",
+              icon: "cube-plus",
+              icon_color: "#89b4fa",
+            },
+            {
+              name: "proton-pass",
+              url: "https://pass.proton.me/u/0/",
+              icon: "password",
+              icon_color: "#fab387",
+            },
+            {
+              name: "password-generator",
+              url: "https://proton.me/pass/password-generator",
+              icon: "key",
+              icon_color: "#89b4fa",
+            },
+            {
+              name: "nextdns",
+              url: "https://my.nextdns.io/138d42/setup",
+              icon: "server-cog",
               icon_color: "#fab387",
             },
           ],
         },
         {
-          name: "gamedev",
+          name: "Quantum Quill",
           links: [
             {
-              name: "itch",
-              url: "https://itch.io",
-              icon: "device-gamepad",
+              name: "cobalt.tools",
+              url: "https://cobalt.tools/",
+              icon: "world-download",
               icon_color: "#f38ba8",
             },
             {
-              name: "godot forums",
-              url: "https://forum.godotengine.org/",
-              icon: "messages",
+              name: "maglit",
+              url: "https://maglit.me/",
+              icon: "unlink",
               icon_color: "#89b4fa",
             },
             {
-              name: "godot docs",
-              url: "https://docs.godotengine.org/en/stable/index.html",
-              icon: "code-asterix",
-              icon_color: "#89b4fa",
-            },
-          ],
-        },
-        {
-          name: "other",
-          links: [
-            {
-              name: "kaggle",
-              url: "https://www.kaggle.com/",
-              icon: "box",
-              icon_color: "#a6e3a1",
-            },
-            {
-              name: "cs50",
-              url: "https://learning.edx.org/course/course-v1:HarvardX+CS50+X/home",
-              icon: "certificate",
+              name: "excalidraw",
+              url: "https://excalidraw.com/",
+              icon: "drag-drop",
               icon_color: "#89b4fa",
             },
           ],
@@ -289,11 +257,11 @@ const default_config = {
 const CONFIG = new Config(saved_config ?? default_config);
 // const CONFIG = new Config(default_config);
 
-(function() {
-  var css = document.createElement('link');
-  css.href = 'src/css/tabler-icons.min.css';
-  css.rel = 'stylesheet';
-  css.type = 'text/css';
+(function () {
+  var css = document.createElement("link");
+  css.href = "src/css/tabler-icons.min.css";
+  css.rel = "stylesheet";
+  css.type = "text/css";
   if (!CONFIG.config.localIcons)
-    document.getElementsByTagName('head')[0].appendChild(css);
+    document.getElementsByTagName("head")[0].appendChild(css);
 })();
