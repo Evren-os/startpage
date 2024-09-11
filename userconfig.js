@@ -109,12 +109,6 @@ const default_config = {
             },
           ],
         },
-      ],
-    },
-    {
-      name: "chi ll",
-      background_url: "src/img/banners/bg-5.gif",
-      categories: [
         {
           name: "Ethereal Emporium",
           links: [
@@ -144,6 +138,12 @@ const default_config = {
             },
           ],
         },
+      ],
+    },
+    {
+      name: "dev",
+      background_url: "src/img/banners/bg-4.gif",
+      categories: [
         {
           name: "Nimbus Nexus",
           links: [
@@ -179,12 +179,6 @@ const default_config = {
             },
           ],
         },
-      ],
-    },
-    {
-      name: "dev",
-      background_url: "src/img/banners/bg-4.gif",
-      categories: [
         {
           name: "Cipher Sanctum",
           links: [
@@ -195,7 +189,7 @@ const default_config = {
               icon_color: "#89b4fa",
             },
             {
-              name: "tailwindcdd",
+              name: "tailwindcss",
               url: "https://gitlab.com/",
               icon: "brand-tailwind",
               icon_color: "#fab387",
