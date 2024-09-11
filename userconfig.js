@@ -195,7 +195,7 @@ const default_config = {
               icon_color: "#89b4fa",
             },
             {
-              name: "tailwindcdd",
+              name: "tailwindcss",
               url: "https://gitlab.com/",
               icon: "brand-tailwind",
               icon_color: "#fab387",
